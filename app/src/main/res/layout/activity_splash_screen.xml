@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+    
+    <LinearLayout
+        android:id="@+id/linearSplashScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagePictureOne"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_229pxh"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_120pxv"
+            android:layout_width="@dimen/_305pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_picture1"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_picture1"
+            />
+        <TextView android:id="@+id/txtMariMulaiMeng"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_56pxh"
+            android:layout_marginTop="@dimen/_68pxv"
+            android:layout_width="wrap_content"
+            android:text="@{splashScreenVM.splashScreenModel.txtMariMulaiMeng}"
+            style="@style/txtPoppinssemibold20" tools:text="@string/msg_mari_mulai_men"
+            />
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtDescription"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="match_parent"
+            android:text="@{splashScreenVM.splashScreenModel.txtDescription}"
+            style="@style/txtPoppinsregular14" tools:text="@string/msg_hilangkan_stres"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnMariMulaiJelajahiEvent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_90pxv"
+            android:layout_width="@dimen/_238pxh"
+            android:paddingBottom="@dimen/_14pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_14pxv" android:singleLine="true"
+            android:text="@string/msg_mari_mulai_jela"
+            android:textAllCaps="false" style="@style/btnSolidRounded_2" tools:text="@string/msg_mari_mulai_jela"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
